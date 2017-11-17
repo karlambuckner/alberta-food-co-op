@@ -1,5 +1,10 @@
 <h1>Alberta Food Co-op</h1>
 
+<%= image_tag "grocery.jpg" %>
+<br>
+<br>
+
+<div class="col-md-6">
 <h2>Products we sell</h2>
 
 <ul>
@@ -8,6 +13,11 @@
   <% end %>
 </ul>
 
+<h2><%= link_to "Add a New Product", new_product_path %></h2>
+<br>
+</div>
+
+<div class="column col md-4">
 <h2>Recently Added</h2>
   <hr>
   <ul>
@@ -37,5 +47,4 @@
     <% end %>
   <br>
   <br>
-<h2>Add a New Product</h2>
-<h3><%= link_to "Add a New Product", new_product_path %></h3>
+</div>

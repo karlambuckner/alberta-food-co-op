@@ -3,4 +3,30 @@
 
 body {
   padding: 30px;
+  color: #662131;
+  font-family: 'Asap Condensed', sans-serif;
+  background-color: #d9dbd9;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+img {
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+}
+
+a {
+  color: #5d774f
+}
+
+.column {
+  float: right;
+  padding-right: 200px;
+}
+
+.col-md-6 {
+  padding-left: 200px;
 }
