@@ -4,12 +4,8 @@ describe Review do
   it { should validate_presence_of :author }
   it { should validate_presence_of :content }
   it { should validate_presence_of :rating }
+  it { should validate_inclusion_of(:rating).in_range(1..5) }
   it { should belong_to :product }
-end
-
-describe Review do
-  it("ensures the ratings are 1-5") do
-    review = Review.new({:rating => 6})
-    expect(review.save()).to(eq(false))
-  end
+  it { should validate_length_of(:content).is_at_most(250) }
+  it { should validate_length_of(:content).is_at_least(50) }
 end
