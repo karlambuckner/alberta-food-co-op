@@ -6,5 +6,34 @@
   <% end %>
 </ul>
 
-
+<h2>Recently Added</h2>
+  <hr>
+  <ul>
+    <% @recent_products.each do |product|%>
+      <li><%= link_to product.name, product_path(product)%><br>
+    <%end%>
+  </ul>
+  <br>
+  <h2>Most Reviewed</h2>
+  <hr>
+  <ul>
+    <% @review_products.each do |product|%>
+      <li><%= link_to product.name, product_path(product)%><br>
+    <%end%>
+  </ul>
+  <br>
+  <h2>Products from the USA</h2>
+  <hr>
+  <% if @usa_products.any? %>
+  <ul>
+  <% @usa_products.each do |product|%>
+    <li><%= link_to product.name, product_path(product)%><br>
+  <%end%>
+  </ul>
+    <% else %>
+    <p>There are no American products yet!</p>
+    <% end %>
+  <br>
+  <br>
+<h2>Add a New Product</h2>
 <h3><%= link_to "Add a New Product", new_product_path %></h3>
