@@ -5,4 +5,10 @@ Review.destroy_all
   product = Product.create!(name: Faker::Food.ingredient,
   cost: Faker::Number.between(1, 50),
   country: Faker::Address.country)
+
+250.times do |i|
+    review = product.reviews.create!(author: Faker::Name.name,
+    content: Faker::Lorem.characters(15),
+    rating:  Faker::Number.between(1, 5))
+  end
 end

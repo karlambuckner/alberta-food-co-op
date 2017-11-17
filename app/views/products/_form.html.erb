@@ -1,0 +1,18 @@
+<%= render "layouts/errors", :object => @product %>
+
+<%= form_for @product do |f| %>
+  <%= f.label :name %>
+  <br>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :cost %>
+  <br>
+  <%= f.number_field :cost %>
+  <br>
+  <%= f.label :country %>
+  <br>
+  <%= f.text_field :country %>
+  <br>
+  <br>
+  <%= f.submit  %>
+<% end %>
