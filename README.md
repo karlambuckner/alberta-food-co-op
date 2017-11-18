@@ -12,15 +12,15 @@ _An app using fakers for seeding and other rails concepts. All products will be 
 
 * _Clone this repository_
 * _CD into project_
-* _$ rails db:create_
-* _$ rails db:migrate_
+* _$ bundle install_
+* _$ rails db:create rails db:create db:migrate_
 * _$ rails db:seed_
 * _$ rails s_
-* _Go to http://localhost:3000_
+* _Go to http://localhost:3000/products_
 
 ## Known Bugs
 
-_There are no known bugs at this time_
+_There is a bug and you will need to reset the database to serve. This is because of the spec validating length of the review content. $ rake db:reset_
 
 ## Support and contact details
 
