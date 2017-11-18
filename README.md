@@ -13,7 +13,7 @@ _An app using fakers for seeding and other rails concepts. All products will be 
 * _Clone this repository_
 * _CD into project_
 * _$ bundle install_
-* _$ rails db:create rails db:create db:migrate_
+* _$ rails db:create db:migrate_
 * _$ rails db:seed_
 * _$ rails s_
 * _Go to http://localhost:3000/products_
