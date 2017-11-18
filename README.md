@@ -1,24 +1,37 @@
-# README
+# _Alberta Food Co-Op_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _An app for a local grocery store to show products carried and reviews of products. 11-17-2017_
 
-Things you may want to cover:
+#### By _**Karla Buckner**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_An app using fakers for seeding and other rails concepts. All products will be listed and have their own link and detail page. Users can review products. Lists will be filtered using scopes._
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+* _Clone this repository_
+* _CD into project_
+* _$ rails db:create_
+* _$ rails db:migrate_
+* _$ rails db:seed_
+* _$ rails s_
+* _Go to http://localhost:3000_
 
-* Database initialization
+## Known Bugs
 
-* How to run the test suite
+_There are no known bugs at this time_
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support and contact details
 
-* Deployment instructions
+_Contact kmb2662@gmail.com or contribute to my Github_
 
-* ...
+## Technologies Used
+
+_Ruby, Rails, CSS, HTML, Bootstrap, JavaScript_
+
+### License
+
+*MIT LICENSE*
+
+Copyright (c) 2017 **_Karla Buckner_**
