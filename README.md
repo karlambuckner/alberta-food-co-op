@@ -20,7 +20,7 @@ _An app using fakers for seeding and other rails concepts. All products will be 
 
 ## Known Bugs
 
-_There is a bug and you will need to reset the database to serve. This is because of the spec validating length of the review content. $ rake db:reset_
+_There are no known bugs at this time._
 
 ## Support and contact details
 
