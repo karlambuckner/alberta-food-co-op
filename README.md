@@ -16,7 +16,7 @@ _An app using fakers for seeding and other rails concepts. All products will be 
 * _$ rails db:create db:migrate_
 * _$ rails db:seed_
 * _$ rails s_
-* _Go to http://localhost:3000/products_
+* _Go to http://localhost:3000_
 
 ## Known Bugs
 
