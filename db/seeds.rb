@@ -8,7 +8,10 @@ Review.destroy_all
 
 250.times do |i|
     review = product.reviews.create!(author: Faker::Name.name,
-    content: Faker::Lorem.characters(15),
+    content: Faker::Lorem.characters(200),
     rating:  Faker::Number.between(1, 5))
   end
 end
+
+p "Created products"
+p "Created reviews"

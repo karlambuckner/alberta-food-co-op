@@ -11,7 +11,12 @@ class Product < ActiveRecord::Base
 
   scope :most_recent, -> { order(created_at: :desc).limit(3) }
 
-  scope :from_usa, -> { where(country: 'USA') }
+  scope :from_usa, -> { where(country: 'USA')}
+  scope :from_usa, -> { where(country: 'United States')}
+  scope :from_usa, -> { where(country: 'America')}
+  scope :from_usa, -> { where(country: 'US')}
+  scope :from_usa, -> { where(country: 'U.S.A')}
+  scope :from_usa, -> { where(country: 'Unites States of America')}
 
   validates :name, :presence => true
   validates :cost, :presence => true
